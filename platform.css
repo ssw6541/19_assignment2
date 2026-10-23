@@ -2117,7 +2117,7 @@ nav > a.active {
   overflow: hidden;
   border-radius: 7px;
   background: #fff;
-  box-shadow: 0 8px 24px #2021240d;
+  box-shadow: 0 8px 23px #2021240d;
 }
 .gallery-grid img {
   transition: transform 0.5s ease;
