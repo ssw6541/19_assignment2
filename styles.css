@@ -691,7 +691,7 @@ img {
 .site-footer p,
 .site-footer > span {
   color: var(--muted);
-  font-size: 7px;
+  font-size: 9px;
 }
 
 /* Login demo */
