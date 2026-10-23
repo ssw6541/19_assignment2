@@ -1,14 +1,14 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>로그인 데모 | DRAW:ON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>로그인 | DRAW:ON</title>
     <link rel="icon" type="image/svg+xml" href="img2/favicon.svg" />
     <link rel="stylesheet" href="platform.css" />
   </head>
-  <body>
-    <header>
+  <body class="login-page">
+    <header class="login-header">
       <div class="header-inner">
         <a class="logo" href="index.html"
           >DRAW<span>:</span>ON<small>ILLUSTRATION ACADEMY</small></a
@@ -23,30 +23,69 @@
         />
         <div>
           <span>YOUR NEXT DRAWING</span>
-          <h2>당신의 다음 그림을<br />함께합니다.</h2>
+          <h2>당신의 다음 작품과<br />함께합니다.</h2>
         </div>
       </div>
-      <form class="login-form" action="login.html">
+      <section class="login-form" id="login-form" aria-labelledby="login-title">
         <a class="logo" href="index.html">DRAW<span>:</span>ON</a>
-        <h1>다시 만나 반가워요.</h1>
+        <h1 id="login-title">만나서 반가워요.</h1>
         <p>나의 그림 여정을 이어가세요.</p>
-        <div class="demo-note">
-          로그인 시연 화면입니다. 입력값은 전송·저장되지 않습니다.
+        <div class="social-buttons" aria-label="간편 로그인">
+          <a class="social-button social-kakao" href="#login-notice"
+            ><span aria-hidden="true">K</span>카카오로 시작하기</a
+          >
+          <a class="social-button social-naver" href="#login-notice"
+            ><span aria-hidden="true">N</span>네이버로 시작하기</a
+          >
+          <a class="social-button social-google" href="#login-notice"
+            ><span aria-hidden="true">G</span>Google로 시작하기</a
+          >
         </div>
-        <label
-          >이메일<input
-            type="email"
-            autocomplete="off"
-            placeholder="name@example.com" /></label
-        ><label
-          >비밀번호<input
-            type="password"
-            autocomplete="new-password"
-            placeholder="비밀번호 입력" /></label
-        ><button class="button" type="button">로그인 시연 화면입니다</button>
-        <p>실제 인증 기능은 제공되지 않습니다.</p>
-        <a href="classes.html">클래스 먼저 둘러보기 →</a>
-      </form>
+        <div class="login-divider"><span>또는 이메일로 로그인</span></div>
+        <div class="login-fields">
+          <label for="email"
+            >이메일<input
+              id="email"
+              type="email"
+              autocomplete="off"
+              placeholder="name@example.com"
+          /></label>
+          <label for="password"
+            >비밀번호<input
+              id="password"
+              type="password"
+              autocomplete="new-password"
+              placeholder="비밀번호 입력"
+          /></label>
+        </div>
+        <a class="button login-submit" href="#login-notice">로그인 <b>↗</b></a>
+        <p class="login-signup">
+          아직 회원이 아니신가요? <a href="#login-notice">회원가입</a>
+        </p>
+        <a class="login-browse" href="classes.html">클래스 먼저 둘러보기 →</a>
+      </section>
     </main>
+    <div class="login-modal" id="login-notice">
+      <a
+        class="login-modal-backdrop"
+        href="login.html"
+        aria-label="안내 닫기"
+      ></a>
+      <section
+        class="login-modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="login-notice-title"
+      >
+        <a class="login-modal-close" href="login.html" aria-label="닫기">×</a>
+        <span class="login-modal-mark" aria-hidden="true">DRAW:ON</span>
+        <h2 id="login-notice-title">로그인 시연 페이지입니다</h2>
+        <p>
+          현재는 시연용 사이트로 로그인과 간편 로그인을 사용할 수 없습니다.<br />입력하신
+          정보는 전송되거나 저장되지 않습니다.
+        </p>
+        <a class="button" href="login.html">확인</a>
+      </section>
+    </div>
   </body>
 </html>

@@ -55,6 +55,27 @@
     </header>
     <main>
       <section class="hero">
+        <input
+          class="hero-pick"
+          type="radio"
+          name="hero-slide"
+          id="hero-pick-1"
+          aria-label="첫 번째 슬라이드"
+        />
+        <input
+          class="hero-pick"
+          type="radio"
+          name="hero-slide"
+          id="hero-pick-2"
+          aria-label="두 번째 슬라이드"
+        />
+        <input
+          class="hero-pick"
+          type="radio"
+          name="hero-slide"
+          id="hero-pick-3"
+          aria-label="세 번째 슬라이드"
+        />
         <div class="hero-slides">
           <figure>
             <img
@@ -63,7 +84,7 @@
             />
             <figcaption>
               <span>DRAW:ON ORIGINAL</span>
-              <h1>그리고 싶었던 세계,<br />이제 직접 그려봐.</h1>
+              <h1>그리고 싶었던 세계,<br />이제 직접 그려보세요.</h1>
               <p>첫 드로잉부터 나만의 일러스트까지</p>
               <a class="button" href="classes.html">클래스 둘러보기 ↗</a>
             </figcaption>
@@ -93,7 +114,61 @@
             </figcaption>
           </figure>
         </div>
-        <div class="hero-dots"><i></i><i></i><i></i></div>
+        <div class="hero-controls">
+          <div class="hero-arrow hero-prev" aria-label="이전 슬라이드">
+            <label
+              class="prev-default"
+              for="hero-pick-3"
+              aria-label="이전 슬라이드"
+              >◀</label
+            >
+            <label
+              class="prev-from-1"
+              for="hero-pick-3"
+              aria-label="이전 슬라이드"
+              >◀</label
+            >
+            <label
+              class="prev-from-2"
+              for="hero-pick-1"
+              aria-label="이전 슬라이드"
+              >◀</label
+            >
+            <label
+              class="prev-from-3"
+              for="hero-pick-2"
+              aria-label="이전 슬라이드"
+              >◀</label
+            >
+          </div>
+          <div class="hero-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="hero-arrow hero-next" aria-label="다음 슬라이드">
+            <label
+              class="next-default"
+              for="hero-pick-2"
+              aria-label="다음 슬라이드"
+              >▶</label
+            >
+            <label
+              class="next-from-1"
+              for="hero-pick-2"
+              aria-label="다음 슬라이드"
+              >▶</label
+            >
+            <label
+              class="next-from-2"
+              for="hero-pick-3"
+              aria-label="다음 슬라이드"
+              >▶</label
+            >
+            <label
+              class="next-from-3"
+              for="hero-pick-1"
+              aria-label="다음 슬라이드"
+              >▶</label
+            >
+          </div>
+        </div>
       </section>
       <div class="quick-links">
         <a href="classes.html"

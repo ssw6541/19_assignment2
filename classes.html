@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>전체 클래스 | DRAW:ON</title>
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="img2/favicon.svg" />
     <link rel="stylesheet" href="platform.css" />
   </head>
   <body>
@@ -51,15 +51,66 @@
       </nav>
     </header>
     <main>
-      <section class="page-intro wrap">
+      <section class="page-intro wrap visual-intro classes-page-intro">
         <span class="eyebrow">ALL CLASSES</span>
         <h1>그리고 싶은 모든 것을 배우다.</h1>
         <p>관심 있는 분야를 골라 나에게 맞는 클래스를 찾아보세요.</p>
       </section>
       <section class="wrap">
-        <div class="filters">
-          <a href="#character">캐릭터</a><a href="#background">배경·컨셉</a
-          ><a href="#digital">디지털 드로잉</a><a href="#beginner">입문</a>
+        <div class="filters class-controls">
+          <div class="class-controls-head">
+            <span class="eyebrow">FIND YOUR CLASS</span
+            ><strong>원하는 클래스 찾기</strong>
+            <p>주제와 학습 단계에 맞춰 둘러보세요.</p>
+          </div>
+          <div class="control-set" role="group" aria-label="주제">
+            <span>주제</span
+            ><input type="radio" name="topic" id="topic-all" checked /><label
+              for="topic-all"
+              >전체</label
+            ><input type="radio" name="topic" id="topic-character" /><label
+              for="topic-character"
+              >캐릭터</label
+            ><input type="radio" name="topic" id="topic-background" /><label
+              for="topic-background"
+              >배경·컨셉</label
+            ><input type="radio" name="topic" id="topic-digital" /><label
+              for="topic-digital"
+              >디지털 드로잉</label
+            >
+          </div>
+          <div class="control-set" role="group" aria-label="단계">
+            <span>단계</span
+            ><input type="radio" name="level" id="level-all" checked /><label
+              for="level-all"
+              >전체</label
+            ><input type="radio" name="level" id="level-entry" /><label
+              for="level-entry"
+              >입문</label
+            ><input type="radio" name="level" id="level-basic" /><label
+              for="level-basic"
+              >베이직</label
+            ><input type="radio" name="level" id="level-advanced" /><label
+              for="level-advanced"
+              >어드밴스</label
+            >
+          </div>
+          <div class="control-set sort-set" role="group" aria-label="정렬">
+            <span>정렬</span
+            ><input
+              type="radio"
+              name="sort"
+              id="sort-recommended"
+              checked
+            /><label for="sort-recommended">추천순</label
+            ><input type="radio" name="sort" id="sort-level" /><label
+              for="sort-level"
+              >단계순</label
+            ><input type="radio" name="sort" id="sort-reverse" /><label
+              for="sort-reverse"
+              >제목 역순</label
+            >
+          </div>
         </div>
         <div class="course-grid">
           <a id="character" class="course-card" href="course.html"
